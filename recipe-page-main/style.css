@@ -8,6 +8,26 @@
   src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
 }
 
+body {
+  background-color: bisque;
+  overflow: hidden;
+}
+
+.outer {
+  background-color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 10px;
+  height: 95vh;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+
+.outer::-webkit-scrollbar {
+  display: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -59,6 +79,7 @@ h3 {
   background-color: hsl(330, 100%, 98%);
   padding: 10px;
   border-radius: 10px;
+  max-width: 90%;
 }
 h2,
 h3 {
