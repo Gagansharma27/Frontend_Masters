@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "inter-variable";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "inter-variable";
+}
+
+.outer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  /* position: relative; */
+}
+
+.nav_mobile {
+  cursor: pointer;
+}
+
+.nav_menu {
+  list-style: none;
+  right: -300px;
+  position: fixed;
+  height: 100%;
+  top: 40px;
+  background-color: white;
+  width: 200px;
+  transition: left 2s ease-in;
+}
+.active {
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.nav_menu > li:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 1000;
+}
+.container {
+  width: 95%;
+  margin: 20px auto;
+  /* border: 2px solid red; */
+}
+
+.paraBtn > button {
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  margin-top: 12px;
+}
+
+.paraBtn > button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+p {
+  font-size: 15px;
+}
+
+.paraBtn > p {
+  color: hsl(236, 13%, 42%);
+}
+
+.second {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  padding: 24px 20px;
+}
+.second > h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: hsl(35, 77%, 62%);
+}
+
+.second > div > p {
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.second > div > h3 {
+  font-weight: 600;
+}
+
+.second > div > h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+hr {
+  background-color: hsl(236, 13%, 42%);
+  height: 1px;
+  border: 0;
+  margin-top: 20px;
+}
+
+.news {
+  display: flex;
+  margin: 24px 0;
+}
+
+.news > div > h2 {
+  margin-top: 10px;
+  color: hsl(236, 13%, 42%);
+}
+
+.news > div > p:nth-child(3) {
+  color: hsl(236, 13%, 42%);
+}
+
+.news > div > p:nth-child(2):hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+.news > img {
+  width: 30%;
+  max-width: 150px;
+  margin-right: 8px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 700px) {
+  .third {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .news > img {
+    width: 45%;
+    max-height: 150px;
+  }
+
+  .nav_mobile {
+    display: none;
+  }
+
+  .nav_menu {
+    display: flex;
+    position: static;
+    width: fit-content;
+    gap: 3rem;
+    font-weight: 200;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .big_screen {
+    display: grid;
+    width: 98%;
+    margin: 20px auto;
+    grid-template-columns: 2.5fr 1fr;
+  }
+
+  .first > img {
+    height: 270px;
+    object-fit: cover;
+  }
+
+  .innerText {
+    display: flex;
+  }
+
+  .innerText > h1 {
+    width: 50%;
+    font-size: 42px;
+  }
+
+  .paraBtn {
+    width: 50%;
+  }
+}
