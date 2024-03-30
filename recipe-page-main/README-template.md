@@ -35,7 +35,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [https://github.com/Gagansharma27/Frontend_Masters/edit/main/recipe-page-main/]
-- Live Site URL: [https://recipepagemain1.netlify.app/]
+- Live Site URL: [https://recipepagemain2.netlify.app/]
 
 ## My process
 
